@@ -10,7 +10,10 @@ I delete all user more than 60 years old because most users are between 18-58 ye
 
 ## Summary of Findings
 
-In the exploration, I found that there are two types of user: * Subscriber * Customer
+In the exploration, I found that there are two types of user: 
+* Subscriber 
+* Customer
+dscsedcvf
 
 ## Key Insights for Presentation
 
