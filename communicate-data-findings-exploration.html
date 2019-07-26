@@ -13159,9 +13159,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Load in your dataset and describe its properties through the questions below.
-Try and motivate your exploration goals through this section.</p>
-</blockquote>
+<h3 id="Download-The-Dataset">Download The Dataset<a class="anchor-link" href="#Download-The-Dataset">&#182;</a></h3><p>In the next cell I will download all the dataset from <a href="https://www.lyft.com/bikes/bay-wheels/system-data">HERE</a>.<br>
+The fordgobike-data of 2017 is ready to download because it's unzipped fils, but the other files are csv zipped, so In need to unzipp files and then donwnload those unzipped filwe to folder I called it datasets.</p>
 
 </div>
 </div>
@@ -13239,6 +13238,14 @@ Try and motivate your exploration goals through this section.</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now after I downloaded files I will read all fordgobike-data of 2018 and 2019 and save it in dataframe called data18_df.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13324,194 +13331,194 @@ Try and motivate your exploration goals through this section.</p>
   </thead>
   <tbody>
     <tr>
-      <th>47127</th>
-      <td>1489</td>
-      <td>2019-04-23 18:02:11.5910</td>
-      <td>2019-04-23 18:27:00.6040</td>
-      <td>39.0</td>
-      <td>Scott St at Golden Gate Ave</td>
-      <td>37.778999</td>
-      <td>-122.436861</td>
-      <td>50.0</td>
-      <td>2nd St at Townsend St</td>
-      <td>37.780526</td>
-      <td>-122.390288</td>
-      <td>302</td>
-      <td>Subscriber</td>
-      <td>1994.0</td>
-      <td>Male</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>177727</th>
-      <td>2423</td>
-      <td>2019-04-07 15:43:08.7360</td>
-      <td>2019-04-07 16:23:32.0640</td>
-      <td>377.0</td>
-      <td>Fell St at Stanyan St</td>
-      <td>37.771917</td>
-      <td>-122.453704</td>
-      <td>377.0</td>
-      <td>Fell St at Stanyan St</td>
-      <td>37.771917</td>
-      <td>-122.453704</td>
-      <td>3618</td>
+      <th>232934</th>
+      <td>594</td>
+      <td>2019-04-01 17:15:24.5340</td>
+      <td>2019-04-01 17:25:19.3340</td>
+      <td>141.0</td>
+      <td>Valencia St at Cesar Chavez St</td>
+      <td>37.747998</td>
+      <td>-122.420219</td>
+      <td>105.0</td>
+      <td>16th St at Prosper St</td>
+      <td>37.764285</td>
+      <td>-122.431804</td>
+      <td>6852</td>
       <td>Customer</td>
+      <td>1974.0</td>
+      <td>Female</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>117733</th>
+      <td>403</td>
+      <td>2019-04-12 18:17:54.3010</td>
+      <td>2019-04-12 18:24:38.1790</td>
+      <td>27.0</td>
+      <td>Beale St at Harrison St</td>
+      <td>37.788059</td>
+      <td>-122.391865</td>
+      <td>20.0</td>
+      <td>Mechanics Monument Plaza (Market St at Bush St)</td>
+      <td>37.791300</td>
+      <td>-122.399051</td>
+      <td>6215</td>
+      <td>Subscriber</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>No</td>
     </tr>
     <tr>
-      <th>68549</th>
-      <td>399</td>
-      <td>2019-04-19 19:08:15.5570</td>
-      <td>2019-04-19 19:14:54.9650</td>
-      <td>369.0</td>
-      <td>Hyde St at Post St</td>
-      <td>37.787349</td>
-      <td>-122.416651</td>
-      <td>13.0</td>
-      <td>Commercial St at Montgomery St</td>
-      <td>37.794231</td>
-      <td>-122.402923</td>
-      <td>3397</td>
+      <th>93426</th>
+      <td>937</td>
+      <td>2019-04-16 15:14:46.4580</td>
+      <td>2019-04-16 15:30:24.3260</td>
+      <td>180.0</td>
+      <td>Telegraph Ave at 23rd St</td>
+      <td>37.812678</td>
+      <td>-122.268773</td>
+      <td>218.0</td>
+      <td>DeFremery Park</td>
+      <td>37.812331</td>
+      <td>-122.285171</td>
+      <td>1992</td>
       <td>Subscriber</td>
-      <td>1985.0</td>
-      <td>Male</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>193099</th>
-      <td>782</td>
-      <td>2019-04-05 16:56:41.3960</td>
-      <td>2019-04-05 17:09:44.1510</td>
-      <td>104.0</td>
-      <td>4th St at 16th St</td>
-      <td>37.767045</td>
-      <td>-122.390833</td>
-      <td>109.0</td>
-      <td>17th St at Valencia St</td>
-      <td>37.763316</td>
-      <td>-122.421904</td>
-      <td>5965</td>
-      <td>Subscriber</td>
-      <td>1987.0</td>
-      <td>Male</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>204355</th>
-      <td>734</td>
-      <td>2019-04-04 14:00:19.1690</td>
-      <td>2019-04-04 14:12:34.0380</td>
-      <td>296.0</td>
-      <td>5th St at Virginia St</td>
-      <td>37.325998</td>
-      <td>-121.877120</td>
-      <td>341.0</td>
-      <td>Fountain Alley at S 2nd St</td>
-      <td>37.336188</td>
-      <td>-121.889277</td>
-      <td>5735</td>
-      <td>Subscriber</td>
-      <td>1995.0</td>
-      <td>Male</td>
+      <td>1993.0</td>
+      <td>Female</td>
       <td>Yes</td>
     </tr>
     <tr>
-      <th>207891</th>
-      <td>459</td>
-      <td>2019-04-04 08:27:21.0150</td>
-      <td>2019-04-04 08:35:00.3490</td>
-      <td>86.0</td>
-      <td>Market St at Dolores St</td>
-      <td>37.769305</td>
-      <td>-122.426826</td>
-      <td>285.0</td>
-      <td>Webster St at O'Farrell St</td>
-      <td>37.783521</td>
-      <td>-122.431158</td>
-      <td>6148</td>
+      <th>175665</th>
+      <td>409</td>
+      <td>2019-04-07 19:40:32.6220</td>
+      <td>2019-04-07 19:47:21.7980</td>
+      <td>210.0</td>
+      <td>45th St at Manila</td>
+      <td>37.833294</td>
+      <td>-122.256224</td>
+      <td>178.0</td>
+      <td>Broadway at 30th St</td>
+      <td>37.819381</td>
+      <td>-122.261928</td>
+      <td>5115</td>
       <td>Subscriber</td>
-      <td>1975.0</td>
+      <td>1983.0</td>
       <td>Male</td>
       <td>No</td>
     </tr>
     <tr>
-      <th>135669</th>
-      <td>881</td>
-      <td>2019-04-11 09:49:39.7480</td>
-      <td>2019-04-11 10:04:21.3180</td>
-      <td>124.0</td>
-      <td>19th St at Florida St</td>
-      <td>37.760447</td>
-      <td>-122.410807</td>
-      <td>19.0</td>
-      <td>Post St at Kearny St</td>
-      <td>37.788975</td>
-      <td>-122.403452</td>
-      <td>5801</td>
-      <td>Subscriber</td>
-      <td>1975.0</td>
-      <td>Male</td>
-      <td>Yes</td>
+      <th>15946</th>
+      <td>1774</td>
+      <td>2019-04-28 16:25:19.4990</td>
+      <td>2019-04-28 16:54:54.4050</td>
+      <td>21.0</td>
+      <td>Montgomery St BART Station (Market St at 2nd St)</td>
+      <td>37.789625</td>
+      <td>-122.400811</td>
+      <td>31.0</td>
+      <td>Raymond Kimbell Playground</td>
+      <td>37.783813</td>
+      <td>-122.434559</td>
+      <td>1459</td>
+      <td>Customer</td>
+      <td>1996.0</td>
+      <td>Female</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th>128340</th>
-      <td>117</td>
-      <td>2019-04-11 20:21:38.9630</td>
-      <td>2019-04-11 20:23:36.0000</td>
-      <td>58.0</td>
-      <td>Market St at 10th St</td>
-      <td>37.776619</td>
-      <td>-122.417385</td>
-      <td>59.0</td>
-      <td>S Van Ness Ave at Market St</td>
-      <td>37.774814</td>
-      <td>-122.418954</td>
-      <td>5014</td>
+      <th>98715</th>
+      <td>670</td>
+      <td>2019-04-15 17:12:00.2100</td>
+      <td>2019-04-15 17:23:10.8580</td>
+      <td>30.0</td>
+      <td>San Francisco Caltrain (Townsend St at 4th St)</td>
+      <td>37.776598</td>
+      <td>-122.395282</td>
+      <td>23.0</td>
+      <td>The Embarcadero at Steuart St</td>
+      <td>37.791464</td>
+      <td>-122.391034</td>
+      <td>290</td>
       <td>Subscriber</td>
-      <td>1995.0</td>
+      <td>1992.0</td>
       <td>Male</td>
       <td>No</td>
     </tr>
     <tr>
-      <th>22405</th>
-      <td>1654</td>
-      <td>2019-04-27 08:21:53.7220</td>
-      <td>2019-04-27 08:49:28.0090</td>
-      <td>150.0</td>
-      <td>Adeline St at 40th St</td>
-      <td>37.831277</td>
-      <td>-122.278267</td>
-      <td>46.0</td>
-      <td>San Antonio Park</td>
-      <td>37.790140</td>
-      <td>-122.242373</td>
-      <td>1870</td>
-      <td>Subscriber</td>
-      <td>1987.0</td>
-      <td>Male</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>70476</th>
-      <td>432</td>
-      <td>2019-04-19 16:15:45.0230</td>
-      <td>2019-04-19 16:22:57.2340</td>
-      <td>77.0</td>
-      <td>11th St at Natoma St</td>
-      <td>37.773507</td>
-      <td>-122.416040</td>
+      <th>60304</th>
+      <td>280</td>
+      <td>2019-04-22 07:11:42.7690</td>
+      <td>2019-04-22 07:16:22.8280</td>
+      <td>90.0</td>
+      <td>Townsend St at 7th St</td>
+      <td>37.771058</td>
+      <td>-122.402717</td>
       <td>67.0</td>
       <td>San Francisco Caltrain Station 2  (Townsend St...</td>
       <td>37.776639</td>
       <td>-122.395526</td>
-      <td>1838</td>
+      <td>1118</td>
       <td>Subscriber</td>
-      <td>1990.0</td>
-      <td>Female</td>
+      <td>1992.0</td>
+      <td>Male</td>
       <td>No</td>
+    </tr>
+    <tr>
+      <th>21059</th>
+      <td>141</td>
+      <td>2019-04-27 13:21:59.4860</td>
+      <td>2019-04-27 13:24:20.5580</td>
+      <td>312.0</td>
+      <td>San Jose Diridon Station</td>
+      <td>37.329732</td>
+      <td>-121.901782</td>
+      <td>307.0</td>
+      <td>SAP Center</td>
+      <td>37.332692</td>
+      <td>-121.900084</td>
+      <td>775</td>
+      <td>Subscriber</td>
+      <td>1982.0</td>
+      <td>Male</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>89464</th>
+      <td>314</td>
+      <td>2019-04-17 07:44:10.4080</td>
+      <td>2019-04-17 07:49:24.7690</td>
+      <td>249.0</td>
+      <td>Russell St at College Ave</td>
+      <td>37.858473</td>
+      <td>-122.253253</td>
+      <td>171.0</td>
+      <td>Rockridge BART Station</td>
+      <td>37.844279</td>
+      <td>-122.251900</td>
+      <td>3077</td>
+      <td>Subscriber</td>
+      <td>1988.0</td>
+      <td>Male</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>30787</th>
+      <td>600</td>
+      <td>2019-04-25 19:51:20.9730</td>
+      <td>2019-04-25 20:01:21.3370</td>
+      <td>357.0</td>
+      <td>2nd St at Julian St</td>
+      <td>37.341132</td>
+      <td>-121.892844</td>
+      <td>317.0</td>
+      <td>San Salvador St at 9th St</td>
+      <td>37.333955</td>
+      <td>-121.877349</td>
+      <td>1800</td>
+      <td>Subscriber</td>
+      <td>1994.0</td>
+      <td>Male</td>
+      <td>Yes</td>
     </tr>
   </tbody>
 </table>
@@ -13523,6 +13530,14 @@ Try and motivate your exploration goals through this section.</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now I will read fordgobike-data of 2017 and save it in dataframe called data17_df.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13586,194 +13601,194 @@ Try and motivate your exploration goals through this section.</p>
   </thead>
   <tbody>
     <tr>
-      <th>305971</th>
-      <td>305971</td>
-      <td>1517</td>
-      <td>2017-09-26 19:10:53.5080</td>
-      <td>2017-09-26 19:36:10.5250</td>
-      <td>81</td>
-      <td>Berry St at 4th St</td>
-      <td>37.775880</td>
-      <td>-122.393170</td>
-      <td>144</td>
-      <td>Precita Park</td>
-      <td>37.747300</td>
-      <td>-122.411403</td>
-      <td>759</td>
-      <td>Customer</td>
-      <td>1989.0</td>
-      <td>Other</td>
+      <th>258284</th>
+      <td>258284</td>
+      <td>892</td>
+      <td>2017-10-10 09:55:25.9140</td>
+      <td>2017-10-10 10:10:18.3480</td>
+      <td>67</td>
+      <td>San Francisco Caltrain Station 2  (Townsend St...</td>
+      <td>37.776639</td>
+      <td>-122.395526</td>
+      <td>58</td>
+      <td>Market St at 10th St</td>
+      <td>37.776619</td>
+      <td>-122.417385</td>
+      <td>2584</td>
+      <td>Subscriber</td>
+      <td>1983.0</td>
+      <td>Male</td>
     </tr>
     <tr>
-      <th>23998</th>
-      <td>23998</td>
-      <td>539</td>
-      <td>2017-12-19 08:23:47.5870</td>
-      <td>2017-12-19 08:32:47.2070</td>
+      <th>100489</th>
+      <td>100489</td>
+      <td>934</td>
+      <td>2017-11-27 17:17:28.1970</td>
+      <td>2017-11-27 17:33:03.0040</td>
+      <td>58</td>
+      <td>Market St at 10th St</td>
+      <td>37.776619</td>
+      <td>-122.417385</td>
       <td>22</td>
       <td>Howard St at Beale St</td>
       <td>37.789756</td>
       <td>-122.394643</td>
-      <td>6</td>
-      <td>The Embarcadero at Sansome St</td>
-      <td>37.804770</td>
-      <td>-122.403234</td>
-      <td>2985</td>
+      <td>2886</td>
       <td>Subscriber</td>
-      <td>1985.0</td>
-      <td>Male</td>
+      <td>1968.0</td>
+      <td>Female</td>
     </tr>
     <tr>
-      <th>64173</th>
-      <td>64173</td>
-      <td>1161</td>
-      <td>2017-12-07 09:45:41.1130</td>
-      <td>2017-12-07 10:05:02.3190</td>
-      <td>53</td>
-      <td>Grove St at Divisadero</td>
-      <td>37.775946</td>
-      <td>-122.437777</td>
-      <td>66</td>
-      <td>3rd St at Townsend St</td>
-      <td>37.778742</td>
-      <td>-122.392741</td>
-      <td>2201</td>
+      <th>95659</th>
+      <td>95659</td>
+      <td>477</td>
+      <td>2017-11-28 18:49:13.9800</td>
+      <td>2017-11-28 18:57:11.8050</td>
+      <td>190</td>
+      <td>West St at 40th St</td>
+      <td>37.830223</td>
+      <td>-122.270950</td>
+      <td>188</td>
+      <td>Dover St at 57th St</td>
+      <td>37.842630</td>
+      <td>-122.267738</td>
+      <td>1763</td>
       <td>Subscriber</td>
       <td>1991.0</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <th>81226</th>
+      <td>81226</td>
+      <td>757</td>
+      <td>2017-12-02 15:16:13.5570</td>
+      <td>2017-12-02 15:28:50.9230</td>
+      <td>116</td>
+      <td>Mississippi St at 17th St</td>
+      <td>37.764802</td>
+      <td>-122.394771</td>
+      <td>42</td>
+      <td>San Francisco City Hall (Polk St at Grove St)</td>
+      <td>37.778650</td>
+      <td>-122.418230</td>
+      <td>1356</td>
+      <td>Subscriber</td>
+      <td>1980.0</td>
       <td>Male</td>
     </tr>
     <tr>
-      <th>34905</th>
-      <td>34905</td>
-      <td>1138</td>
-      <td>2017-12-15 10:03:48.3560</td>
-      <td>2017-12-15 10:22:46.6380</td>
-      <td>146</td>
-      <td>30th St at San Jose Ave</td>
-      <td>37.742314</td>
-      <td>-122.423181</td>
+      <th>276476</th>
+      <td>276476</td>
+      <td>398</td>
+      <td>2017-10-04 19:46:19.8410</td>
+      <td>2017-10-04 19:52:58.5310</td>
+      <td>119</td>
+      <td>18th St at Noe St</td>
+      <td>37.761047</td>
+      <td>-122.432642</td>
+      <td>127</td>
+      <td>Valencia St at 21st St</td>
+      <td>37.756708</td>
+      <td>-122.421025</td>
+      <td>619</td>
+      <td>Subscriber</td>
+      <td>1977.0</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <th>397244</th>
+      <td>397244</td>
+      <td>1430</td>
+      <td>2017-08-29 18:54:09.8970</td>
+      <td>2017-08-29 19:18:00.5010</td>
       <td>3</td>
       <td>Powell St BART Station (Market St at 4th St)</td>
       <td>37.786375</td>
       <td>-122.404904</td>
-      <td>174</td>
+      <td>42</td>
+      <td>San Francisco City Hall (Polk St at Grove St)</td>
+      <td>37.778650</td>
+      <td>-122.418230</td>
+      <td>2629</td>
       <td>Subscriber</td>
-      <td>1985.0</td>
+      <td>1983.0</td>
       <td>Male</td>
     </tr>
     <tr>
-      <th>132628</th>
-      <td>132628</td>
-      <td>677</td>
-      <td>2017-11-14 20:11:41.8180</td>
-      <td>2017-11-14 20:22:59.1700</td>
-      <td>66</td>
-      <td>3rd St at Townsend St</td>
-      <td>37.778742</td>
-      <td>-122.392741</td>
-      <td>21</td>
-      <td>Montgomery St BART Station (Market St at 2nd St)</td>
-      <td>37.789625</td>
-      <td>-122.400811</td>
-      <td>755</td>
+      <th>427956</th>
+      <td>427956</td>
+      <td>1046</td>
+      <td>2017-08-18 18:07:31.3360</td>
+      <td>2017-08-18 18:24:57.6570</td>
+      <td>182</td>
+      <td>19th Street BART Station</td>
+      <td>37.809013</td>
+      <td>-122.268247</td>
+      <td>194</td>
+      <td>Lakeshore Ave at Trestle Glen Rd</td>
+      <td>37.811081</td>
+      <td>-122.243268</td>
+      <td>1110</td>
       <td>Subscriber</td>
-      <td>1985.0</td>
+      <td>1984.0</td>
       <td>Male</td>
     </tr>
     <tr>
-      <th>128163</th>
-      <td>128163</td>
-      <td>307</td>
-      <td>2017-11-16 12:36:35.0030</td>
-      <td>2017-11-16 12:41:42.3640</td>
-      <td>59</td>
-      <td>S Van Ness Ave at Market St</td>
-      <td>37.774814</td>
-      <td>-122.418954</td>
-      <td>89</td>
-      <td>Division St at Potrero Ave</td>
-      <td>37.769218</td>
-      <td>-122.407646</td>
-      <td>2735</td>
-      <td>Subscriber</td>
-      <td>1987.0</td>
-      <td>Male</td>
-    </tr>
-    <tr>
-      <th>506074</th>
-      <td>506074</td>
-      <td>133</td>
-      <td>2017-07-12 18:46:18.7130</td>
-      <td>2017-07-12 18:48:32.3150</td>
-      <td>184</td>
-      <td>Franklin St at 14th St</td>
-      <td>37.803765</td>
-      <td>-122.269988</td>
-      <td>185</td>
-      <td>Jackson St at 14th St</td>
-      <td>37.801857</td>
-      <td>-122.265368</td>
-      <td>572</td>
-      <td>Subscriber</td>
-      <td>1985.0</td>
-      <td>Male</td>
-    </tr>
-    <tr>
-      <th>48107</th>
-      <td>48107</td>
-      <td>1133</td>
-      <td>2017-12-12 08:34:54.6030</td>
-      <td>2017-12-12 08:53:47.8700</td>
-      <td>39</td>
-      <td>Scott St at Golden Gate Ave</td>
-      <td>37.778999</td>
-      <td>-122.436861</td>
-      <td>25</td>
-      <td>Howard St at 2nd St</td>
-      <td>37.787522</td>
-      <td>-122.397405</td>
-      <td>1981</td>
-      <td>Subscriber</td>
-      <td>1972.0</td>
-      <td>Male</td>
-    </tr>
-    <tr>
-      <th>63517</th>
-      <td>63517</td>
-      <td>745</td>
-      <td>2017-12-07 13:28:35.6850</td>
-      <td>2017-12-07 13:41:01.3990</td>
-      <td>196</td>
-      <td>Grand Ave at Perkins St</td>
-      <td>37.808894</td>
-      <td>-122.256460</td>
-      <td>186</td>
-      <td>Lakeside Dr at 14th St</td>
-      <td>37.801319</td>
-      <td>-122.262642</td>
-      <td>1734</td>
+      <th>5201</th>
+      <td>5201</td>
+      <td>2275</td>
+      <td>2017-12-28 16:30:52.7720</td>
+      <td>2017-12-28 17:08:48.2780</td>
+      <td>7</td>
+      <td>Frank H Ogawa Plaza</td>
+      <td>37.804562</td>
+      <td>-122.271738</td>
+      <td>180</td>
+      <td>Telegraph Ave at 23rd St</td>
+      <td>37.812678</td>
+      <td>-122.268773</td>
+      <td>1440</td>
       <td>Customer</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>255972</th>
-      <td>255972</td>
-      <td>173</td>
-      <td>2017-10-10 20:05:55.7290</td>
-      <td>2017-10-10 20:08:49.3570</td>
-      <td>24</td>
-      <td>Spear St at Folsom St</td>
-      <td>37.789677</td>
-      <td>-122.390428</td>
+      <th>356353</th>
+      <td>356353</td>
+      <td>764</td>
+      <td>2017-09-12 09:13:47.8740</td>
+      <td>2017-09-12 09:26:32.0840</td>
+      <td>67</td>
+      <td>San Francisco Caltrain Station 2  (Townsend St...</td>
+      <td>37.776639</td>
+      <td>-122.395526</td>
       <td>16</td>
       <td>Steuart St at Market St</td>
       <td>37.794130</td>
       <td>-122.394430</td>
-      <td>2688</td>
+      <td>1617</td>
       <td>Subscriber</td>
-      <td>1989.0</td>
+      <td>1984.0</td>
       <td>Male</td>
+    </tr>
+    <tr>
+      <th>255677</th>
+      <td>255677</td>
+      <td>213</td>
+      <td>2017-10-11 00:10:49.5570</td>
+      <td>2017-10-11 00:14:22.8080</td>
+      <td>90</td>
+      <td>Townsend St at 7th St</td>
+      <td>37.771058</td>
+      <td>-122.402717</td>
+      <td>64</td>
+      <td>5th St at Brannan St</td>
+      <td>37.776754</td>
+      <td>-122.399018</td>
+      <td>373</td>
+      <td>Subscriber</td>
+      <td>1993.0</td>
+      <td>Other</td>
     </tr>
   </tbody>
 </table>
@@ -13785,6 +13800,14 @@ Try and motivate your exploration goals through this section.</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>fordgobike-data 2017 it's contain two duplicate columns (index). So, I will drop 'Unnamed: 0' column.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13847,184 +13870,184 @@ Try and motivate your exploration goals through this section.</p>
   </thead>
   <tbody>
     <tr>
-      <th>3883</th>
-      <td>66</td>
-      <td>2017-12-29 13:21:51.4380</td>
-      <td>2017-12-29 13:22:57.9270</td>
-      <td>321</td>
-      <td>5th at Folsom</td>
-      <td>37.780146</td>
-      <td>-122.403071</td>
-      <td>45</td>
-      <td>5th St at Howard St</td>
-      <td>37.781752</td>
-      <td>-122.405127</td>
-      <td>3400</td>
+      <th>18660</th>
+      <td>541</td>
+      <td>2017-12-20 16:16:33.0610</td>
+      <td>2017-12-20 16:25:35.0130</td>
+      <td>81</td>
+      <td>Berry St at 4th St</td>
+      <td>37.775880</td>
+      <td>-122.393170</td>
+      <td>15</td>
+      <td>San Francisco Ferry Building (Harry Bridges Pl...</td>
+      <td>37.795392</td>
+      <td>-122.394203</td>
+      <td>3555</td>
       <td>Subscriber</td>
-      <td>1987.0</td>
+      <td>1969.0</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <th>335680</th>
+      <td>146</td>
+      <td>2017-09-18 13:06:45.6370</td>
+      <td>2017-09-18 13:09:11.7800</td>
+      <td>58</td>
+      <td>Market St at 10th St</td>
+      <td>37.776619</td>
+      <td>-122.417385</td>
+      <td>44</td>
+      <td>Civic Center/UN Plaza BART Station (Market St ...</td>
+      <td>37.781074</td>
+      <td>-122.411738</td>
+      <td>951</td>
+      <td>Subscriber</td>
+      <td>1983.0</td>
       <td>Male</td>
     </tr>
     <tr>
-      <th>141194</th>
-      <td>395</td>
-      <td>2017-11-12 16:28:24.4700</td>
-      <td>2017-11-12 16:35:00.3120</td>
-      <td>49</td>
-      <td>S Park St at 3rd St</td>
-      <td>37.780760</td>
-      <td>-122.394989</td>
-      <td>90</td>
-      <td>Townsend St at 7th St</td>
-      <td>37.771058</td>
-      <td>-122.402717</td>
-      <td>2937</td>
+      <th>235767</th>
+      <td>291</td>
+      <td>2017-10-17 08:31:27.2640</td>
+      <td>2017-10-17 08:36:19.1040</td>
+      <td>16</td>
+      <td>Steuart St at Market St</td>
+      <td>37.794130</td>
+      <td>-122.394430</td>
+      <td>6</td>
+      <td>The Embarcadero at Sansome St</td>
+      <td>37.804770</td>
+      <td>-122.403234</td>
+      <td>2661</td>
       <td>Subscriber</td>
-      <td>1989.0</td>
+      <td>1974.0</td>
       <td>Male</td>
     </tr>
     <tr>
-      <th>317207</th>
-      <td>2099</td>
-      <td>2017-09-23 11:06:59.7560</td>
-      <td>2017-09-23 11:41:59.0280</td>
-      <td>63</td>
-      <td>Bryant St at 6th St</td>
-      <td>37.775910</td>
-      <td>-122.402575</td>
-      <td>23</td>
-      <td>The Embarcadero at Steuart St</td>
-      <td>37.791464</td>
-      <td>-122.391034</td>
-      <td>2551</td>
+      <th>5469</th>
+      <td>690</td>
+      <td>2017-12-28 15:26:46.3950</td>
+      <td>2017-12-28 15:38:16.4970</td>
+      <td>240</td>
+      <td>Haste St at Telegraph Ave</td>
+      <td>37.866043</td>
+      <td>-122.258804</td>
+      <td>245</td>
+      <td>Downtown Berkeley BART</td>
+      <td>37.870348</td>
+      <td>-122.267764</td>
+      <td>3403</td>
+      <td>Customer</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>225615</th>
+      <td>292</td>
+      <td>2017-10-19 17:54:17.4040</td>
+      <td>2017-10-19 17:59:10.3790</td>
+      <td>176</td>
+      <td>MacArthur BART Station</td>
+      <td>37.828410</td>
+      <td>-122.266315</td>
+      <td>211</td>
+      <td>Broadway at 40th St</td>
+      <td>37.827757</td>
+      <td>-122.256716</td>
+      <td>2739</td>
       <td>Subscriber</td>
-      <td>1950.0</td>
+      <td>1985.0</td>
       <td>Male</td>
     </tr>
     <tr>
-      <th>86248</th>
-      <td>216</td>
-      <td>2017-12-01 07:56:39.8890</td>
-      <td>2017-12-01 08:00:15.8910</td>
-      <td>49</td>
-      <td>S Park St at 3rd St</td>
-      <td>37.780760</td>
-      <td>-122.394989</td>
-      <td>28</td>
-      <td>The Embarcadero at Bryant St</td>
-      <td>37.787168</td>
-      <td>-122.388098</td>
-      <td>1227</td>
+      <th>352835</th>
+      <td>315</td>
+      <td>2017-09-13 08:40:39.2730</td>
+      <td>2017-09-13 08:45:54.6250</td>
+      <td>22</td>
+      <td>Howard St at Beale St</td>
+      <td>37.789756</td>
+      <td>-122.394643</td>
+      <td>50</td>
+      <td>2nd St at Townsend St - Coming Soon</td>
+      <td>37.780526</td>
+      <td>-122.390288</td>
+      <td>2322</td>
+      <td>Subscriber</td>
+      <td>1990.0</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <th>331427</th>
+      <td>289</td>
+      <td>2017-09-19 15:56:31.0030</td>
+      <td>2017-09-19 16:01:20.5090</td>
+      <td>37</td>
+      <td>2nd St at Folsom St</td>
+      <td>37.785000</td>
+      <td>-122.395936</td>
+      <td>24</td>
+      <td>Spear St at Folsom St</td>
+      <td>37.789677</td>
+      <td>-122.390428</td>
+      <td>1999</td>
       <td>Subscriber</td>
       <td>1977.0</td>
       <td>Male</td>
     </tr>
     <tr>
-      <th>353704</th>
-      <td>1199</td>
-      <td>2017-09-12 20:16:46.7220</td>
-      <td>2017-09-12 20:36:46.2080</td>
-      <td>58</td>
-      <td>Market St at 10th St</td>
-      <td>37.776619</td>
-      <td>-122.417385</td>
-      <td>129</td>
-      <td>Harrison St at 20th St</td>
-      <td>37.758862</td>
-      <td>-122.412544</td>
-      <td>1617</td>
-      <td>Subscriber</td>
-      <td>1988.0</td>
-      <td>Female</td>
-    </tr>
-    <tr>
-      <th>290205</th>
-      <td>491</td>
-      <td>2017-10-01 13:41:59.2720</td>
-      <td>2017-10-01 13:50:10.5960</td>
-      <td>176</td>
-      <td>MacArthur BART Station</td>
-      <td>37.828410</td>
-      <td>-122.266315</td>
-      <td>214</td>
-      <td>Market St at Brockhurst St</td>
-      <td>37.823321</td>
-      <td>-122.275733</td>
-      <td>1322</td>
-      <td>Subscriber</td>
-      <td>1992.0</td>
-      <td>Other</td>
-    </tr>
-    <tr>
-      <th>224032</th>
-      <td>384</td>
-      <td>2017-10-20 09:06:36.9590</td>
-      <td>2017-10-20 09:13:01.4070</td>
+      <th>263143</th>
+      <td>171</td>
+      <td>2017-10-09 07:25:25.8880</td>
+      <td>2017-10-09 07:28:17.8490</td>
+      <td>50</td>
+      <td>2nd St at Townsend St - Coming Soon</td>
+      <td>37.780526</td>
+      <td>-122.390288</td>
       <td>30</td>
       <td>San Francisco Caltrain (Townsend St at 4th St)</td>
       <td>37.776598</td>
       <td>-122.395282</td>
-      <td>284</td>
-      <td>Yerba Buena Center for the Arts (Howard St at ...</td>
-      <td>37.784872</td>
-      <td>-122.400876</td>
-      <td>2456</td>
-      <td>Subscriber</td>
-      <td>1975.0</td>
-      <td>Female</td>
-    </tr>
-    <tr>
-      <th>25071</th>
-      <td>308</td>
-      <td>2017-12-18 19:00:33.1760</td>
-      <td>2017-12-18 19:05:41.2950</td>
-      <td>182</td>
-      <td>19th Street BART Station</td>
-      <td>37.809013</td>
-      <td>-122.268247</td>
-      <td>195</td>
-      <td>Bay Pl at Vernon St</td>
-      <td>37.812314</td>
-      <td>-122.260779</td>
-      <td>201</td>
-      <td>Subscriber</td>
-      <td>1979.0</td>
-      <td>Male</td>
-    </tr>
-    <tr>
-      <th>98545</th>
-      <td>127</td>
-      <td>2017-11-28 08:40:48.8070</td>
-      <td>2017-11-28 08:42:56.3450</td>
-      <td>66</td>
-      <td>3rd St at Townsend St</td>
-      <td>37.778742</td>
-      <td>-122.392741</td>
-      <td>30</td>
-      <td>San Francisco Caltrain (Townsend St at 4th St)</td>
-      <td>37.776598</td>
-      <td>-122.395282</td>
-      <td>2913</td>
+      <td>203</td>
       <td>Subscriber</td>
       <td>1980.0</td>
       <td>Male</td>
     </tr>
     <tr>
-      <th>273315</th>
-      <td>439</td>
-      <td>2017-10-05 17:09:18.7240</td>
-      <td>2017-10-05 17:16:38.0520</td>
-      <td>150</td>
-      <td>Adeline St at 40th St</td>
-      <td>37.831277</td>
-      <td>-122.278267</td>
-      <td>176</td>
-      <td>MacArthur BART Station</td>
-      <td>37.828410</td>
-      <td>-122.266315</td>
-      <td>348</td>
+      <th>316219</th>
+      <td>259</td>
+      <td>2017-09-23 16:25:43.0140</td>
+      <td>2017-09-23 16:30:02.6030</td>
+      <td>85</td>
+      <td>Church St at Duboce Ave</td>
+      <td>37.770083</td>
+      <td>-122.429156</td>
+      <td>96</td>
+      <td>Dolores St at 15th St</td>
+      <td>37.766210</td>
+      <td>-122.426614</td>
+      <td>2976</td>
       <td>Subscriber</td>
-      <td>1943.0</td>
+      <td>1974.0</td>
       <td>Male</td>
+    </tr>
+    <tr>
+      <th>215628</th>
+      <td>347</td>
+      <td>2017-10-23 08:40:36.5630</td>
+      <td>2017-10-23 08:46:23.9800</td>
+      <td>134</td>
+      <td>Valencia St at 24th St</td>
+      <td>37.752428</td>
+      <td>-122.420628</td>
+      <td>129</td>
+      <td>Harrison St at 20th St</td>
+      <td>37.758862</td>
+      <td>-122.412544</td>
+      <td>3119</td>
+      <td>Subscriber</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
   </tbody>
 </table>
@@ -14036,6 +14059,14 @@ Try and motivate your exploration goals through this section.</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now I will merge all the dataframe together.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -14099,193 +14130,193 @@ Try and motivate your exploration goals through this section.</p>
   </thead>
   <tbody>
     <tr>
-      <th>630536</th>
-      <td>80</td>
-      <td>2018-06-29 16:31:14.3090</td>
-      <td>2018-06-29 16:32:34.7870</td>
-      <td>15.0</td>
-      <td>San Francisco Ferry Building (Harry Bridges Pl...</td>
-      <td>37.795392</td>
-      <td>-122.394203</td>
-      <td>16.0</td>
-      <td>Steuart St at Market St</td>
-      <td>37.794130</td>
-      <td>-122.394430</td>
-      <td>3116</td>
+      <th>380285</th>
+      <td>240</td>
+      <td>2018-04-17 08:49:18.6530</td>
+      <td>2018-04-17 08:53:18.9540</td>
+      <td>242.0</td>
+      <td>Milvia St at Derby St</td>
+      <td>37.860125</td>
+      <td>-122.269384</td>
+      <td>246.0</td>
+      <td>Berkeley Civic Center</td>
+      <td>37.869060</td>
+      <td>-122.270556</td>
+      <td>3426</td>
       <td>Subscriber</td>
-      <td>1987.0</td>
-      <td>Female</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>1278096</th>
-      <td>732</td>
-      <td>2018-09-20 09:04:56.3720</td>
-      <td>2018-09-20 09:17:09.1470</td>
-      <td>101.0</td>
-      <td>Potrero Ave at 15th St (Temporary Location)</td>
-      <td>37.766629</td>
-      <td>-122.407706</td>
-      <td>343.0</td>
-      <td>Bryant St at 2nd St</td>
-      <td>37.783172</td>
-      <td>-122.393572</td>
-      <td>2188</td>
-      <td>Subscriber</td>
-      <td>1986.0</td>
+      <td>1989.0</td>
       <td>Male</td>
       <td>No</td>
     </tr>
     <tr>
-      <th>2949756</th>
-      <td>420</td>
-      <td>2017-10-23 09:35:00.9640</td>
-      <td>2017-10-23 09:42:01.7970</td>
-      <td>125.0</td>
-      <td>20th St at Bryant St</td>
-      <td>37.759200</td>
-      <td>-122.409851</td>
+      <th>566700</th>
+      <td>208</td>
+      <td>2018-05-10 14:28:30.4820</td>
+      <td>2018-05-10 14:31:59.4040</td>
+      <td>42.0</td>
+      <td>San Francisco City Hall (Polk St at Grove St)</td>
+      <td>37.778650</td>
+      <td>-122.418230</td>
+      <td>59.0</td>
+      <td>S Van Ness Ave at Market St</td>
+      <td>37.774814</td>
+      <td>-122.418954</td>
+      <td>3090</td>
+      <td>Subscriber</td>
+      <td>1975.0</td>
+      <td>Male</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <th>2172762</th>
+      <td>489</td>
+      <td>2019-02-12 06:45:14.7780</td>
+      <td>2019-02-12 06:53:24.1230</td>
       <td>97.0</td>
       <td>14th St at Mission St</td>
       <td>37.768265</td>
       <td>-122.420110</td>
-      <td>2359</td>
+      <td>93.0</td>
+      <td>4th St at Mission Bay Blvd S</td>
+      <td>37.770407</td>
+      <td>-122.391198</td>
+      <td>5030</td>
       <td>Subscriber</td>
-      <td>1982.0</td>
-      <td>Male</td>
-      <td>NaN</td>
+      <td>1991.0</td>
+      <td>Female</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th>722598</th>
-      <td>694</td>
-      <td>2018-06-15 18:09:28.5050</td>
-      <td>2018-06-15 18:21:03.5020</td>
-      <td>194.0</td>
-      <td>Lakeshore Ave at Trestle Glen Rd</td>
-      <td>37.811081</td>
-      <td>-122.243268</td>
-      <td>182.0</td>
-      <td>19th Street BART Station</td>
-      <td>37.809013</td>
-      <td>-122.268247</td>
-      <td>1486</td>
+      <th>415478</th>
+      <td>546</td>
+      <td>2018-04-08 18:02:35.7830</td>
+      <td>2018-04-08 18:11:42.5720</td>
+      <td>89.0</td>
+      <td>Division St at Potrero Ave</td>
+      <td>37.769218</td>
+      <td>-122.407646</td>
+      <td>97.0</td>
+      <td>14th St at Mission St</td>
+      <td>37.768265</td>
+      <td>-122.420110</td>
+      <td>187</td>
       <td>Subscriber</td>
       <td>1988.0</td>
       <td>Male</td>
       <td>No</td>
     </tr>
     <tr>
-      <th>251070</th>
-      <td>418</td>
-      <td>2018-03-19 17:00:02.5490</td>
-      <td>2018-03-19 17:07:00.9500</td>
-      <td>66.0</td>
-      <td>3rd St at Townsend St</td>
-      <td>37.778742</td>
-      <td>-122.392741</td>
-      <td>23.0</td>
-      <td>The Embarcadero at Steuart St</td>
-      <td>37.791464</td>
-      <td>-122.391034</td>
-      <td>2072</td>
+      <th>650038</th>
+      <td>290</td>
+      <td>2018-06-27 08:00:16.4230</td>
+      <td>2018-06-27 08:05:07.3340</td>
+      <td>119.0</td>
+      <td>18th St at Noe St</td>
+      <td>37.761047</td>
+      <td>-122.432642</td>
+      <td>223.0</td>
+      <td>16th St Mission BART Station 2</td>
+      <td>37.764765</td>
+      <td>-122.420091</td>
+      <td>2562</td>
       <td>Subscriber</td>
       <td>1993.0</td>
-      <td>Male</td>
+      <td>Female</td>
       <td>No</td>
     </tr>
     <tr>
-      <th>3116084</th>
-      <td>710</td>
-      <td>2017-09-04 15:36:53.0000</td>
-      <td>2017-09-04 15:48:43.3830</td>
-      <td>17.0</td>
-      <td>Embarcadero BART Station (Beale St at Market St)</td>
-      <td>37.792251</td>
-      <td>-122.397086</td>
+      <th>692519</th>
+      <td>566</td>
+      <td>2018-06-20 18:34:59.6380</td>
+      <td>2018-06-20 18:44:26.2260</td>
+      <td>30.0</td>
+      <td>San Francisco Caltrain (Townsend St at 4th St)</td>
+      <td>37.776598</td>
+      <td>-122.395282</td>
       <td>5.0</td>
       <td>Powell St BART Station (Market St at 5th St)</td>
       <td>37.783899</td>
       <td>-122.408445</td>
-      <td>2362</td>
-      <td>Customer</td>
+      <td>657</td>
+      <td>Subscriber</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th>311894</th>
-      <td>446</td>
-      <td>2018-03-01 14:31:46.4770</td>
-      <td>2018-03-01 14:39:12.6310</td>
-      <td>231.0</td>
-      <td>14th St at Filbert St</td>
-      <td>37.808750</td>
-      <td>-122.283282</td>
-      <td>160.0</td>
-      <td>West Oakland BART Station</td>
-      <td>37.805318</td>
-      <td>-122.294837</td>
-      <td>3306</td>
+      <th>2055105</th>
+      <td>402</td>
+      <td>2019-01-01 12:20:05.7620</td>
+      <td>2019-01-01 12:26:47.9700</td>
+      <td>311.0</td>
+      <td>Paseo De San Antonio at 2nd St</td>
+      <td>37.333798</td>
+      <td>-121.886943</td>
+      <td>305.0</td>
+      <td>Ryland Park</td>
+      <td>37.342725</td>
+      <td>-121.895617</td>
+      <td>3933</td>
       <td>Subscriber</td>
-      <td>1993.0</td>
+      <td>1996.0</td>
       <td>Male</td>
       <td>Yes</td>
     </tr>
     <tr>
-      <th>2849679</th>
-      <td>872</td>
-      <td>2017-11-20 22:25:59.9280</td>
-      <td>2017-11-20 22:40:32.2700</td>
-      <td>80.0</td>
-      <td>Townsend St at 5th St</td>
-      <td>37.775306</td>
-      <td>-122.397380</td>
-      <td>129.0</td>
-      <td>Harrison St at 20th St</td>
-      <td>37.758862</td>
-      <td>-122.412544</td>
-      <td>2411</td>
+      <th>945532</th>
+      <td>98</td>
+      <td>2018-07-12 18:39:56.4350</td>
+      <td>2018-07-12 18:41:34.4720</td>
+      <td>134.0</td>
+      <td>Valencia St at 24th St</td>
+      <td>37.752428</td>
+      <td>-122.420628</td>
+      <td>127.0</td>
+      <td>Valencia St at 21st St</td>
+      <td>37.756708</td>
+      <td>-122.421025</td>
+      <td>178</td>
       <td>Subscriber</td>
-      <td>1981.0</td>
-      <td>Male</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>599346</th>
-      <td>521</td>
-      <td>2018-05-04 16:41:57.6940</td>
-      <td>2018-05-04 16:50:38.7450</td>
-      <td>183.0</td>
-      <td>Telegraph Ave at 19th St</td>
-      <td>37.808702</td>
-      <td>-122.269927</td>
-      <td>183.0</td>
-      <td>Telegraph Ave at 19th St</td>
-      <td>37.808702</td>
-      <td>-122.269927</td>
-      <td>2521</td>
-      <td>Subscriber</td>
-      <td>1956.0</td>
+      <td>1982.0</td>
       <td>Male</td>
       <td>No</td>
     </tr>
     <tr>
-      <th>2632661</th>
-      <td>936</td>
-      <td>2019-04-11 08:37:50.1370</td>
-      <td>2019-04-11 08:53:26.2420</td>
-      <td>120.0</td>
-      <td>Mission Dolores Park</td>
-      <td>37.761420</td>
-      <td>-122.426435</td>
-      <td>58.0</td>
-      <td>Market St at 10th St</td>
-      <td>37.776619</td>
-      <td>-122.417385</td>
-      <td>6540</td>
-      <td>Customer</td>
-      <td>1985.0</td>
-      <td>Female</td>
+      <th>2877007</th>
+      <td>407</td>
+      <td>2017-11-12 09:57:27.9330</td>
+      <td>2017-11-12 10:04:15.1050</td>
+      <td>279.0</td>
+      <td>Santa Clara St at 7th St</td>
+      <td>37.339146</td>
+      <td>-121.884105</td>
+      <td>317.0</td>
+      <td>San Salvador St at 9th St</td>
+      <td>37.333955</td>
+      <td>-121.877349</td>
+      <td>2319</td>
+      <td>Subscriber</td>
+      <td>1994.0</td>
+      <td>Male</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1635132</th>
+      <td>205</td>
+      <td>2018-11-20 07:21:38.0580</td>
+      <td>2018-11-20 07:25:03.4750</td>
+      <td>195.0</td>
+      <td>Bay Pl at Vernon St</td>
+      <td>37.812314</td>
+      <td>-122.260779</td>
+      <td>182.0</td>
+      <td>19th Street BART Station</td>
+      <td>37.809013</td>
+      <td>-122.268247</td>
+      <td>368</td>
+      <td>Subscriber</td>
+      <td>1980.0</td>
+      <td>Male</td>
       <td>No</td>
     </tr>
   </tbody>
@@ -14299,35 +14330,17 @@ Try and motivate your exploration goals through this section.</p>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Check if the there are plus columns.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># df.to_csv(&#39;forgobike-tripdata.csv&#39;, index=False)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># df = pd.read_csv(&#39;forgobike-tripdata.csv&#39;, index_col=False)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data18_df</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
@@ -14360,9 +14373,17 @@ Try and motivate your exploration goals through this section.</p>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There is one column, now I will check what is this column.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">not_in_2017data</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14408,7 +14429,7 @@ Columns in &#39;2017 Data&#39; that don&#39;t appear &#39;2018&amp;2019 Data&#39
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -14459,7 +14480,7 @@ memory usage: 422.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -14475,7 +14496,7 @@ memory usage: 422.1+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -14619,7 +14640,7 @@ memory usage: 422.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
@@ -14635,7 +14656,7 @@ memory usage: 422.1+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -14652,7 +14673,7 @@ memory usage: 422.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14668,7 +14689,7 @@ memory usage: 422.1+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -14701,10 +14722,56 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;member_age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2019</span> <span class="o">-</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;member_birth_year&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;user_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14723,52 +14790,6 @@ dtype: int64</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;member_age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2019</span> <span class="o">-</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;member_birth_year&#39;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;user_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[19]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
 <pre>Subscriber    2747580
 Customer       506745
 Name: user_type, dtype: int64</pre>
@@ -14782,10 +14803,10 @@ Name: user_type, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">member_age</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">member_age</span><span class="o">.</span><span class="n">describe</span><span class="p">([</span><span class="o">.</span><span class="mi">01</span><span class="p">,</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">.</span><span class="mi">2</span><span class="p">,</span><span class="o">.</span><span class="mi">3</span><span class="p">,</span><span class="o">.</span><span class="mi">4</span><span class="p">,</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="o">.</span><span class="mi">6</span><span class="p">,</span><span class="o">.</span><span class="mi">7</span><span class="p">,</span><span class="o">.</span><span class="mi">8</span><span class="p">,</span><span class="o">.</span><span class="mi">9</span><span class="p">,</span><span class="o">.</span><span class="mi">99</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14798,21 +14819,29 @@ Name: user_type, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>count    3.036159e+06
-mean     3.586325e+01
-std      1.043760e+01
-min      1.800000e+01
-25%      2.800000e+01
-50%      3.400000e+01
-75%      4.100000e+01
-max      1.410000e+02
-Name: member_age, dtype: float64</pre>
+<pre>count    3036159.000000
+mean          35.863246
+std           10.437596
+min           18.000000
+1%            20.000000
+10%           25.000000
+20%           27.000000
+30%           30.000000
+40%           31.000000
+50%           34.000000
+60%           36.000000
+70%           39.000000
+80%           44.000000
+90%           51.000000
+99%           66.000000
+max          141.000000
+Name: member_age, dtype: object</pre>
 </div>
 
 </div>
@@ -14820,13 +14849,21 @@ Name: member_age, dtype: float64</pre>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Setup some features.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="c1"># Show all datafram columns.</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">,</span> <span class="n">font_scale</span><span class="o">=</span><span class="mf">1.25</span><span class="p">,</span> <span class="n">rc</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">:(</span><span class="mi">20</span><span class="p">,</span><span class="mi">7</span><span class="p">)})</span>
 <span class="n">base_color</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
@@ -14838,7 +14875,7 @@ Name: member_age, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;member_age&quot;</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;brown&#39;</span><span class="p">)</span>
@@ -14873,9 +14910,18 @@ Name: member_age, dtype: float64</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The previous figure it is show the upper extreme is 60. So, that mean the age more than 60 is potential outliers.<br>
+I will delete all memebers with age more than 60 years.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">member_age</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14888,10 +14934,10 @@ Name: member_age, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;member_age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">member_age</span><span class="o">.</span><span class="n">describe</span><span class="p">([</span><span class="o">.</span><span class="mi">01</span><span class="p">,</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">.</span><span class="mi">2</span><span class="p">,</span><span class="o">.</span><span class="mi">3</span><span class="p">,</span><span class="o">.</span><span class="mi">4</span><span class="p">,</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="o">.</span><span class="mi">6</span><span class="p">,</span><span class="o">.</span><span class="mi">7</span><span class="p">,</span><span class="o">.</span><span class="mi">8</span><span class="p">,</span><span class="o">.</span><span class="mi">9</span><span class="p">,</span><span class="o">.</span><span class="mi">99</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14904,21 +14950,29 @@ Name: member_age, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[71]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>count    2.959104e+06
-mean     3.505000e+01
-std      9.125958e+00
-min      1.800000e+01
-25%      2.800000e+01
-50%      3.300000e+01
-75%      4.000000e+01
-max      6.000000e+01
-Name: member_age, dtype: float64</pre>
+<pre>count    2959104.000000
+mean          35.049999
+std            9.125958
+min           18.000000
+1%            20.000000
+10%           25.000000
+20%           27.000000
+30%           29.000000
+40%           31.000000
+50%           33.000000
+60%           36.000000
+70%           38.000000
+80%           43.000000
+90%           49.000000
+99%           59.000000
+max           60.000000
+Name: member_age, dtype: object</pre>
 </div>
 
 </div>
@@ -14926,10 +14980,25 @@ Name: member_age, dtype: float64</pre>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I divided members age into 5 categories.</p>
+<ul>
+<li>11-20</li>
+<li>21-30</li>
+<li>31-40</li>
+<li>41-50</li>
+<li>51-60</li>
+</ul>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">category</span><span class="p">(</span><span class="n">age</span><span class="p">):</span>
@@ -14956,24 +15025,9 @@ Name: member_age, dtype: float64</pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I divided members age into 5 categories.</p>
-<ul>
-<li>11-20</li>
-<li>21-30</li>
-<li>31-40</li>
-<li>41-50</li>
-<li>51-60</li>
-</ul>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;age_category&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -14989,7 +15043,7 @@ Name: member_age, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -15009,9 +15063,17 @@ Name: age_category, dtype: int64</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Change the data type to datetime.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">start_time</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">start_time</span><span class="p">)</span>
@@ -15023,9 +15085,17 @@ Name: age_category, dtype: int64</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Create new columns for the Visualizations.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;start_time_month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;start_time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%B&#39;</span><span class="p">)</span>
@@ -15090,7 +15160,7 @@ memory usage: 606.0+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calculate_distance</span><span class="p">(</span><span class="n">x_start</span><span class="p">,</span> <span class="n">y_start</span><span class="p">,</span> <span class="n">x_end</span><span class="p">,</span> <span class="n">y_end</span><span class="p">):</span>
@@ -15107,7 +15177,7 @@ memory usage: 606.0+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;distance_km&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">calculate_distance</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;start_station_latitude&#39;</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;start_station_longitude&#39;</span><span class="p">],</span>
@@ -15121,7 +15191,7 @@ memory usage: 606.0+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -15137,7 +15207,7 @@ memory usage: 606.0+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -15189,284 +15259,284 @@ memory usage: 606.0+ MB
   </thead>
   <tbody>
     <tr>
-      <th>1137438</th>
-      <td>503</td>
-      <td>2018-08-12 19:07:14.541</td>
-      <td>2018-08-12 19:15:37.843</td>
-      <td>74.0</td>
-      <td>Laguna St at Hayes St</td>
-      <td>37.776435</td>
-      <td>-122.426244</td>
-      <td>34.0</td>
-      <td>Father Alfred E Boeddeker Park</td>
-      <td>37.783988</td>
-      <td>-122.412408</td>
-      <td>3356</td>
+      <th>727193</th>
+      <td>989</td>
+      <td>2018-06-15 08:13:34.973</td>
+      <td>2018-06-15 08:30:04.195</td>
+      <td>67.0</td>
+      <td>San Francisco Caltrain Station 2  (Townsend St...</td>
+      <td>37.776639</td>
+      <td>-122.395526</td>
+      <td>59.0</td>
+      <td>S Van Ness Ave at Market St</td>
+      <td>37.774814</td>
+      <td>-122.418954</td>
+      <td>1797</td>
       <td>Subscriber</td>
-      <td>1988.0</td>
+      <td>1967.0</td>
       <td>Male</td>
       <td>No</td>
-      <td>31.0</td>
-      <td>31-40</td>
-      <td>August</td>
-      <td>18-08</td>
-      <td>Sunday</td>
-      <td>19</td>
-      <td>19</td>
-      <td>8.383333</td>
-      <td>1.479340</td>
-    </tr>
-    <tr>
-      <th>146846</th>
-      <td>393</td>
-      <td>2018-02-14 08:22:30.068</td>
-      <td>2018-02-14 08:29:03.987</td>
-      <td>89.0</td>
-      <td>Division St at Potrero Ave</td>
-      <td>37.769218</td>
-      <td>-122.407646</td>
-      <td>80.0</td>
-      <td>Townsend St at 5th St</td>
-      <td>37.775306</td>
-      <td>-122.397380</td>
-      <td>625</td>
-      <td>Subscriber</td>
-      <td>1995.0</td>
-      <td>Female</td>
-      <td>No</td>
-      <td>24.0</td>
-      <td>21-30</td>
-      <td>February</td>
-      <td>18-02</td>
-      <td>Wednesday</td>
+      <td>52.0</td>
+      <td>51-60</td>
+      <td>June</td>
+      <td>18-06</td>
+      <td>Friday</td>
       <td>8</td>
       <td>8</td>
-      <td>6.550000</td>
-      <td>1.128976</td>
+      <td>16.483333</td>
+      <td>2.073882</td>
     </tr>
     <tr>
-      <th>554597</th>
-      <td>1512</td>
-      <td>2018-05-12 12:36:03.304</td>
-      <td>2018-05-12 13:01:16.156</td>
-      <td>11.0</td>
-      <td>Davis St at Jackson St</td>
-      <td>37.797280</td>
-      <td>-122.398436</td>
-      <td>81.0</td>
-      <td>Berry St at 4th St</td>
-      <td>37.775880</td>
-      <td>-122.393170</td>
-      <td>277</td>
+      <th>958786</th>
+      <td>1833</td>
+      <td>2018-07-11 08:00:34.316</td>
+      <td>2018-07-11 08:31:07.781</td>
+      <td>267.0</td>
+      <td>Derby St at College Ave</td>
+      <td>37.861804</td>
+      <td>-122.253569</td>
+      <td>7.0</td>
+      <td>Frank H Ogawa Plaza</td>
+      <td>37.804562</td>
+      <td>-122.271738</td>
+      <td>1540</td>
       <td>Subscriber</td>
-      <td>1982.0</td>
-      <td>Female</td>
-      <td>No</td>
-      <td>37.0</td>
-      <td>31-40</td>
-      <td>May</td>
-      <td>18-05</td>
-      <td>Saturday</td>
-      <td>12</td>
-      <td>13</td>
-      <td>25.200000</td>
-      <td>2.420109</td>
-    </tr>
-    <tr>
-      <th>2611899</th>
-      <td>300</td>
-      <td>2019-04-12 19:43:33.271</td>
-      <td>2019-04-12 19:48:33.635</td>
-      <td>175.0</td>
-      <td>49th St at Telegraph Ave</td>
-      <td>37.835946</td>
-      <td>-122.262366</td>
-      <td>207.0</td>
-      <td>Broadway at Coronado Ave</td>
-      <td>37.835788</td>
-      <td>-122.251621</td>
-      <td>5443</td>
-      <td>Subscriber</td>
-      <td>1974.0</td>
+      <td>1972.0</td>
       <td>Male</td>
       <td>No</td>
-      <td>45.0</td>
+      <td>47.0</td>
       <td>41-50</td>
-      <td>April</td>
-      <td>19-04</td>
-      <td>Friday</td>
-      <td>19</td>
-      <td>19</td>
-      <td>5.000000</td>
-      <td>0.946073</td>
-    </tr>
-    <tr>
-      <th>1811325</th>
-      <td>629</td>
-      <td>2018-12-12 09:27:31.162</td>
-      <td>2018-12-12 09:38:00.862</td>
-      <td>120.0</td>
-      <td>Mission Dolores Park</td>
-      <td>37.761420</td>
-      <td>-122.426435</td>
-      <td>60.0</td>
-      <td>8th St at Ringold St</td>
-      <td>37.774520</td>
-      <td>-122.409449</td>
-      <td>1248</td>
-      <td>Customer</td>
-      <td>1983.0</td>
-      <td>Male</td>
-      <td>No</td>
-      <td>36.0</td>
-      <td>31-40</td>
-      <td>December</td>
-      <td>18-12</td>
-      <td>Wednesday</td>
-      <td>9</td>
-      <td>9</td>
-      <td>10.483333</td>
-      <td>2.086600</td>
-    </tr>
-    <tr>
-      <th>2100156</th>
-      <td>494</td>
-      <td>2019-02-22 14:56:02.048</td>
-      <td>2019-02-22 15:04:16.885</td>
-      <td>350.0</td>
-      <td>8th St at Brannan St</td>
-      <td>37.771431</td>
-      <td>-122.405787</td>
-      <td>343.0</td>
-      <td>Bryant St at 2nd St</td>
-      <td>37.783172</td>
-      <td>-122.393572</td>
-      <td>4381</td>
-      <td>Subscriber</td>
-      <td>1990.0</td>
-      <td>Male</td>
-      <td>No</td>
-      <td>29.0</td>
-      <td>21-30</td>
-      <td>February</td>
-      <td>19-02</td>
-      <td>Friday</td>
-      <td>14</td>
-      <td>15</td>
-      <td>8.233333</td>
-      <td>1.689997</td>
-    </tr>
-    <tr>
-      <th>863702</th>
-      <td>406</td>
-      <td>2018-07-25 08:15:48.420</td>
-      <td>2018-07-25 08:22:35.239</td>
-      <td>60.0</td>
-      <td>8th St at Ringold St</td>
-      <td>37.774520</td>
-      <td>-122.409449</td>
-      <td>114.0</td>
-      <td>Rhode Island St at 17th St</td>
-      <td>37.764478</td>
-      <td>-122.402570</td>
-      <td>2937</td>
-      <td>Subscriber</td>
-      <td>1987.0</td>
-      <td>Female</td>
-      <td>No</td>
-      <td>32.0</td>
-      <td>31-40</td>
       <td>July</td>
       <td>18-07</td>
       <td>Wednesday</td>
       <td>8</td>
       <td>8</td>
-      <td>6.766667</td>
-      <td>1.268735</td>
+      <td>30.550000</td>
+      <td>6.551647</td>
     </tr>
     <tr>
-      <th>2431421</th>
-      <td>217</td>
-      <td>2019-03-10 13:05:19.790</td>
-      <td>2019-03-10 13:08:57.753</td>
-      <td>110.0</td>
-      <td>17th &amp; Folsom Street Park (17th St at Folsom St)</td>
-      <td>37.763708</td>
-      <td>-122.415204</td>
-      <td>113.0</td>
-      <td>Franklin Square</td>
-      <td>37.764555</td>
-      <td>-122.410345</td>
-      <td>4656</td>
+      <th>1797235</th>
+      <td>638</td>
+      <td>2018-12-14 15:12:23.421</td>
+      <td>2018-12-14 15:23:02.334</td>
+      <td>98.0</td>
+      <td>Valencia St at 16th St</td>
+      <td>37.765052</td>
+      <td>-122.421866</td>
+      <td>365.0</td>
+      <td>Turk St at Fillmore St</td>
+      <td>37.780450</td>
+      <td>-122.431946</td>
+      <td>5415</td>
+      <td>Subscriber</td>
+      <td>1994.0</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>25.0</td>
+      <td>21-30</td>
+      <td>December</td>
+      <td>18-12</td>
+      <td>Friday</td>
+      <td>15</td>
+      <td>15</td>
+      <td>10.633333</td>
+      <td>1.926039</td>
+    </tr>
+    <tr>
+      <th>221727</th>
+      <td>226</td>
+      <td>2018-03-27 17:10:38.702</td>
+      <td>2018-03-27 17:14:25.067</td>
+      <td>8.0</td>
+      <td>The Embarcadero at Vallejo St</td>
+      <td>37.799953</td>
+      <td>-122.398525</td>
+      <td>16.0</td>
+      <td>Steuart St at Market St</td>
+      <td>37.794130</td>
+      <td>-122.394430</td>
+      <td>3560</td>
+      <td>Subscriber</td>
+      <td>1963.0</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>56.0</td>
+      <td>51-60</td>
+      <td>March</td>
+      <td>18-03</td>
+      <td>Tuesday</td>
+      <td>17</td>
+      <td>17</td>
+      <td>3.766667</td>
+      <td>0.740131</td>
+    </tr>
+    <tr>
+      <th>2973002</th>
+      <td>359</td>
+      <td>2017-10-16 15:31:58.421</td>
+      <td>2017-10-16 15:37:58.260</td>
+      <td>14.0</td>
+      <td>Clay St at Battery St</td>
+      <td>37.795001</td>
+      <td>-122.399970</td>
+      <td>23.0</td>
+      <td>The Embarcadero at Steuart St</td>
+      <td>37.791464</td>
+      <td>-122.391034</td>
+      <td>854</td>
+      <td>Subscriber</td>
+      <td>1987.0</td>
+      <td>Male</td>
+      <td>NaN</td>
+      <td>32.0</td>
+      <td>31-40</td>
+      <td>October</td>
+      <td>17-10</td>
+      <td>Monday</td>
+      <td>15</td>
+      <td>15</td>
+      <td>5.983333</td>
+      <td>0.879544</td>
+    </tr>
+    <tr>
+      <th>1090623</th>
+      <td>405</td>
+      <td>2018-08-20 17:10:31.762</td>
+      <td>2018-08-20 17:17:17.611</td>
+      <td>62.0</td>
+      <td>Victoria Manalo Draves Park</td>
+      <td>37.777791</td>
+      <td>-122.406432</td>
+      <td>3.0</td>
+      <td>Powell St BART Station (Market St at 4th St)</td>
+      <td>37.786375</td>
+      <td>-122.404904</td>
+      <td>2389</td>
+      <td>Subscriber</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>No</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>August</td>
+      <td>18-08</td>
+      <td>Monday</td>
+      <td>17</td>
+      <td>17</td>
+      <td>6.750000</td>
+      <td>0.962291</td>
+    </tr>
+    <tr>
+      <th>1315917</th>
+      <td>306</td>
+      <td>2018-09-14 09:10:45.951</td>
+      <td>2018-09-14 09:15:52.226</td>
+      <td>150.0</td>
+      <td>Adeline St at 40th St</td>
+      <td>37.831277</td>
+      <td>-122.278267</td>
+      <td>176.0</td>
+      <td>MacArthur BART Station</td>
+      <td>37.828410</td>
+      <td>-122.266315</td>
+      <td>2505</td>
+      <td>Subscriber</td>
+      <td>1993.0</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>26.0</td>
+      <td>21-30</td>
+      <td>September</td>
+      <td>18-09</td>
+      <td>Friday</td>
+      <td>9</td>
+      <td>9</td>
+      <td>5.100000</td>
+      <td>1.099282</td>
+    </tr>
+    <tr>
+      <th>959458</th>
+      <td>477</td>
+      <td>2018-07-11 07:31:38.767</td>
+      <td>2018-07-11 07:39:36.674</td>
+      <td>109.0</td>
+      <td>17th St at Valencia St</td>
+      <td>37.763316</td>
+      <td>-122.421904</td>
+      <td>89.0</td>
+      <td>Division St at Potrero Ave</td>
+      <td>37.769218</td>
+      <td>-122.407646</td>
+      <td>1392</td>
+      <td>Subscriber</td>
+      <td>1991.0</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>28.0</td>
+      <td>21-30</td>
+      <td>July</td>
+      <td>18-07</td>
+      <td>Wednesday</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7.950000</td>
+      <td>1.416842</td>
+    </tr>
+    <tr>
+      <th>1627172</th>
+      <td>214</td>
+      <td>2018-11-24 12:37:34.131</td>
+      <td>2018-11-24 12:41:08.585</td>
+      <td>81.0</td>
+      <td>Berry St at 4th St</td>
+      <td>37.775880</td>
+      <td>-122.393170</td>
+      <td>92.0</td>
+      <td>Mission Bay Kids Park</td>
+      <td>37.772301</td>
+      <td>-122.393028</td>
+      <td>766</td>
       <td>Subscriber</td>
       <td>1984.0</td>
-      <td>Female</td>
+      <td>Male</td>
       <td>No</td>
       <td>35.0</td>
       <td>31-40</td>
-      <td>March</td>
-      <td>19-03</td>
-      <td>Sunday</td>
-      <td>13</td>
-      <td>13</td>
-      <td>3.616667</td>
-      <td>0.438346</td>
-    </tr>
-    <tr>
-      <th>2372760</th>
-      <td>1137</td>
-      <td>2019-03-16 14:36:33.595</td>
-      <td>2019-03-16 14:55:31.185</td>
-      <td>324.0</td>
-      <td>Union Square (Powell St at Post St)</td>
-      <td>37.788300</td>
-      <td>-122.408531</td>
-      <td>97.0</td>
-      <td>14th St at Mission St</td>
-      <td>37.768265</td>
-      <td>-122.420110</td>
-      <td>6089</td>
-      <td>Subscriber</td>
-      <td>1996.0</td>
-      <td>Female</td>
-      <td>Yes</td>
-      <td>23.0</td>
-      <td>21-30</td>
-      <td>March</td>
-      <td>19-03</td>
+      <td>November</td>
+      <td>18-11</td>
       <td>Saturday</td>
-      <td>14</td>
-      <td>14</td>
-      <td>18.950000</td>
-      <td>2.446587</td>
+      <td>12</td>
+      <td>12</td>
+      <td>3.566667</td>
+      <td>0.397480</td>
     </tr>
     <tr>
-      <th>3250400</th>
-      <td>1606</td>
-      <td>2017-07-03 12:55:29.781</td>
-      <td>2017-07-03 13:22:16.650</td>
-      <td>28.0</td>
-      <td>The Embarcadero at Bryant St</td>
-      <td>37.787168</td>
-      <td>-122.388098</td>
-      <td>15.0</td>
-      <td>San Francisco Ferry Building (Harry Bridges Pl...</td>
-      <td>37.795392</td>
-      <td>-122.394203</td>
-      <td>917</td>
-      <td>Customer</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>None</td>
-      <td>July</td>
-      <td>17-07</td>
-      <td>Monday</td>
-      <td>12</td>
-      <td>13</td>
-      <td>26.766667</td>
-      <td>1.059420</td>
+      <th>1230277</th>
+      <td>893</td>
+      <td>2018-09-27 14:25:43.575</td>
+      <td>2018-09-27 14:40:36.786</td>
+      <td>243.0</td>
+      <td>Bancroft Way at College Ave</td>
+      <td>37.869360</td>
+      <td>-122.254337</td>
+      <td>244.0</td>
+      <td>Shattuck Ave at Hearst Ave</td>
+      <td>37.873748</td>
+      <td>-122.268648</td>
+      <td>3549</td>
+      <td>Subscriber</td>
+      <td>1995.0</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>24.0</td>
+      <td>21-30</td>
+      <td>September</td>
+      <td>18-09</td>
+      <td>Thursday</td>
+      <td>14</td>
+      <td>14</td>
+      <td>14.883333</td>
+      <td>1.350047</td>
     </tr>
   </tbody>
 </table>
@@ -15481,10 +15551,76 @@ memory usage: 606.0+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[30]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(3177270, 25)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[31]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15503,72 +15639,6 @@ memory usage: 606.0+ MB
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(3177270, 25)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[33]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[34]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
 <pre>3177270</pre>
 </div>
 
@@ -15580,7 +15650,7 @@ memory usage: 606.0+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
@@ -15596,7 +15666,7 @@ memory usage: 606.0+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -15621,7 +15691,7 @@ memory usage: 606.0+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -15675,6 +15745,27 @@ memory usage: 630.3+ MB
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now in the end, after I cleand the data I will save it as csv.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;forgobike-tripdata-master.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -15761,7 +15852,7 @@ memory usage: 630.3+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span>  <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_month&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">base_color</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">9</span><span class="p">)</span>
@@ -15799,7 +15890,7 @@ memory usage: 630.3+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">start_time_month</span> <span class="o">==</span> <span class="s1">&#39;April&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
@@ -15815,7 +15906,7 @@ memory usage: 630.3+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -15840,7 +15931,7 @@ memory usage: 630.3+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">start_time_month</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;pie&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="n">fontsize</span> <span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -15895,7 +15986,7 @@ memory usage: 630.3+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span>  <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_day&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">base_color</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="mf">7.5</span><span class="p">)</span>
@@ -15948,7 +16039,7 @@ memory usage: 630.3+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span>  <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_hour&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">base_color</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="mf">7.5</span><span class="p">)</span>
@@ -16001,7 +16092,7 @@ memory usage: 630.3+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;start_time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
@@ -16060,7 +16151,7 @@ From November to February the number of trips was decreased may be because the W
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nm_category_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;age_category&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;bike_id&#39;</span><span class="p">:</span><span class="s1">&#39;count&#39;</span><span class="p">})</span>
@@ -16078,7 +16169,7 @@ From November to February the number of trips was decreased may be because the W
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[43]:</div>
+    <div class="prompt output_prompt">Out[42]:</div>
 
 
 
@@ -16149,7 +16240,7 @@ From November to February the number of trips was decreased may be because the W
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nm_category_df</span><span class="o">.</span><span class="n">bike_id</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span><span class="n">fontsize</span> <span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">base_color</span><span class="p">)</span>
@@ -16199,7 +16290,7 @@ in Bivariate Exploration section I will show the number of rides based on age ov
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_points</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -16264,24 +16355,10 @@ in Bivariate Exploration section I will show the number of rides based on age ov
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># max_count_gender = df[&#39;member_gender&#39;].value_counts().max()</span>
-<span class="c1"># max_prop_gender = max_count_gender / n_points</span>
-
-<span class="c1"># tick_props_gender = np.arange(0, max_prop_gender, 0.05)</span>
-<span class="c1"># tick_names_gender = [&#39;{:0.2f}&#39;.format(v) for v in tick_props_gender]</span>
-
-<span class="c1"># sns.countplot(data=df, x=&#39;member_gender&#39;, color=base_color)</span>
-
-<span class="c1"># ax = plt.gca()</span>
-<span class="c1"># plt.yticks(tick_props_gender * n_points, tick_names_gender)</span>
-<span class="c1"># ax.set_ylabel(&#39;Proportion&#39;)</span>
-<span class="c1"># ax.set_xlabel(&#39;Member Gender&#39;)</span>
-<span class="c1"># ax.set_title(&quot;Percentage of Bike Rides for Members Gender&quot;, fontsize=15);</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">member_gender</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;pie&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="n">fontsize</span> <span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.0f%%</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">member_gender</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;pie&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="n">fontsize</span> <span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.0f%%</span><span class="s1">&#39;</span><span class="p">)</span>
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
@@ -16345,7 +16422,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_month&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;member_gender&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span><span class="n">aspect</span><span class="o">=</span><span class="mf">20.7</span><span class="o">/</span><span class="mf">8.27</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">base_color</span><span class="p">,</span>
@@ -16393,7 +16470,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_order</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;21-30&#39;</span><span class="p">,</span> <span class="s1">&#39;31-40&#39;</span><span class="p">,</span> <span class="s1">&#39;41-50&#39;</span><span class="p">,</span> <span class="s1">&#39;51-60&#39;</span><span class="p">]</span>
@@ -16442,7 +16519,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_order</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;21-30&#39;</span><span class="p">,</span> <span class="s1">&#39;31-40&#39;</span><span class="p">,</span> <span class="s1">&#39;41-50&#39;</span><span class="p">,</span> <span class="s1">&#39;51-60&#39;</span><span class="p">]</span>
@@ -16491,7 +16568,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_day&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;member_gender&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span><span class="n">aspect</span><span class="o">=</span><span class="mf">20.7</span><span class="o">/</span><span class="mf">8.27</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">base_color</span><span class="p">,</span>
@@ -16539,7 +16616,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_day&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;age_category&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span><span class="n">aspect</span><span class="o">=</span><span class="mf">20.7</span><span class="o">/</span><span class="mf">8.27</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">base_color</span><span class="p">,</span>
@@ -16587,7 +16664,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_day&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;user_type&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span><span class="n">aspect</span><span class="o">=</span><span class="mf">20.7</span><span class="o">/</span><span class="mf">8.27</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">base_color</span><span class="p">,</span>
@@ -16635,7 +16712,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_hour&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;member_gender&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span><span class="n">aspect</span><span class="o">=</span><span class="mf">20.7</span><span class="o">/</span><span class="mf">8.27</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">base_color</span><span class="p">,</span>
@@ -16683,7 +16760,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_hour&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;user_type&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span><span class="n">aspect</span><span class="o">=</span><span class="mf">20.7</span><span class="o">/</span><span class="mf">8.27</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">base_color</span><span class="p">,</span>
@@ -16730,7 +16807,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_monthly&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;age_category&#39;</span><span class="p">,</span> <span class="n">hue_order</span><span class="o">=</span><span class="n">my_order</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;viridis_r&#39;</span><span class="p">,</span>
@@ -16780,7 +16857,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_monthly&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;member_gender&#39;</span><span class="p">,</span> 
@@ -16822,7 +16899,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;member_gender&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;age_category&#39;</span><span class="p">,</span> <span class="n">hue_order</span><span class="o">=</span><span class="n">my_order</span><span class="p">,</span>
@@ -16872,7 +16949,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_points</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -16931,7 +17008,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;member_gender&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;user_type&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">base_color</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;viridis_r&#39;</span><span class="p">)</span>
@@ -16980,7 +17057,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;user_type&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;member_age&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">base_color</span><span class="p">,</span> <span class="n">inner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
@@ -17028,7 +17105,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
@@ -17078,7 +17155,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
@@ -17157,7 +17234,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_month&#39;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;user_type&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;member_gender&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">20</span><span class="o">/</span><span class="mi">15</span><span class="p">,</span>
@@ -17207,7 +17284,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_month&#39;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;user_type&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;age_category&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">20</span><span class="o">/</span><span class="mi">15</span><span class="p">,</span>
@@ -17257,7 +17334,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_day&#39;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;user_type&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;member_gender&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">20</span><span class="o">/</span><span class="mi">15</span><span class="p">,</span>
@@ -17307,7 +17384,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;start_time_day&#39;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;user_type&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;age_category&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">20</span><span class="o">/</span><span class="mi">15</span><span class="p">,</span>
@@ -17357,7 +17434,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">duration_min</span><span class="o">.</span><span class="n">describe</span><span class="p">([</span><span class="o">.</span><span class="mi">01</span><span class="p">,</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">.</span><span class="mi">2</span><span class="p">,</span><span class="o">.</span><span class="mi">3</span><span class="p">,</span><span class="o">.</span><span class="mi">4</span><span class="p">,</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="o">.</span><span class="mi">6</span><span class="p">,</span><span class="o">.</span><span class="mi">7</span><span class="p">,</span><span class="o">.</span><span class="mi">8</span><span class="p">,</span><span class="o">.</span><span class="mi">9</span><span class="p">,</span><span class="o">.</span><span class="mi">99</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">))</span>
@@ -17373,7 +17450,7 @@ In Bivariate Exploration section I will show the number of rides based on the ge
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[67]:</div>
+    <div class="prompt output_prompt">Out[66]:</div>
 
 
 
@@ -17406,7 +17483,7 @@ Name: duration_min, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">duration_min</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="o">*</span><span class="n">df</span><span class="o">.</span><span class="n">duration_min</span><span class="o">.</span><span class="n">mean</span><span class="p">()]</span> <span class="c1"># 2*mean</span>
@@ -17440,7 +17517,7 @@ Name: duration_min, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">temp_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;user_type&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;duration_min&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;member_gender&quot;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;violin&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -17491,19 +17568,6 @@ Name: duration_min, dtype: object</pre>
 <h3 id="Talk-about-some-of-the-relationships-you-observed-in-this-part-of-the-investigation.-Were-there-features-that-strengthened-each-other-in-terms-of-looking-at-your-feature(s)-of-interest?">Talk about some of the relationships you observed in this part of the investigation. Were there features that strengthened each other in terms of looking at your feature(s) of interest?<a class="anchor-link" href="#Talk-about-some-of-the-relationships-you-observed-in-this-part-of-the-investigation.-Were-there-features-that-strengthened-each-other-in-terms-of-looking-at-your-feature(s)-of-interest?">&#182;</a></h3><blockquote><p>I extended my investigation with multi different variables user_type, duration_min, member_gender, start_time_day, start_time_month, and age_category. The multivariate exploration here showed that we can see one figure instead of two or more figures, it's showed me monthly usage of bike rides for each user type based on gender. Also showed that customer users are mostly used bike on weekend unlike the subscriber users they used it mostly on weekday, and showed used bike on weekend are 21-30 ages for both customer and subscriber users, and on weed day are 31-40 for all user type. Also showed the customer users have the highset trip duration even they has lowset number of trips.</p>
 </blockquote>
 <h3 id="Were-there-any-interesting-or-surprising-interactions-between-features?">Were there any interesting or surprising interactions between features?<a class="anchor-link" href="#Were-there-any-interesting-or-surprising-interactions-between-features?">&#182;</a></h3><blockquote><p>I surprised because I expectd the trip duration for subscriber users will be higher than customer users.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>At the end of your report, make sure that you export the notebook as an
-html file from the <code>File &gt; Download as... &gt; HTML</code> menu. Make sure you keep
-track of where the exported file goes, so you can put it in the same folder
-as this notebook for project submission. Also, make sure you remove all of
-the quote-formatted guide notes like this one before you finish your report!</p>
 </blockquote>
 
 </div>
