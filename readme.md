@@ -37,3 +37,8 @@ In the end I show the number of bike rides over time based on age category. I di
 - Age between 31 to 40
 - Age between 41 to 50
 - Age between 51 to 60<br>
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
