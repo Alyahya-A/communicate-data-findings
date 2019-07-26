@@ -23,8 +23,8 @@ Also I found most ages are between 31 to 40 years old for subscriber users, and 
 For the presentation, I focus on just the  user types, gender, and age. I start by showing the percentage of bike rides for all user types subcriber and customer, it's show the subcriber users are 84.2% and that mean the customer users are 15.8%.<br>
 Then I plot the number of bike rides (trips) for each day based on gender that mean it's plot the number of trips for evryday to show trips number for each gender on all days.<br>
 In the end I show the number of bike rides over time based on age category. I divided members age into 5 categories in cleaning section:
-- 11-20
-- 21-30
-- 31-40
-- 41-50
-- 51-60 <br>
+- Age between 11 to 20 
+- Age between 21 to 30
+- Age between 31 to 40
+- Age between 41 to 50
+- Age between 51 to 60<br>
