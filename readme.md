@@ -42,7 +42,7 @@ In the end I show the number of bike rides over time based on age category. I di
 
 
 
-<table style="border-collapse: collapse; width: 100%; height: 138px;" border="1">
+<table style="border-collapse: collapse; width: 50.7874%; height: 177px; margin-left: auto; margin-right: auto;" border="1">
 <tbody>
 <tr style="height: 46px;">
 <td style="width: 50%; height: 46px;">
@@ -69,7 +69,7 @@ In the end I show the number of bike rides over time based on age category. I di
 </td>
 </tr>
 <tr style="height: 46px;">
-<td style="width: 50%; height: 46px;" colspan="2">
+<td style="width: 100%; height: 46px;" colspan="2">
 <div class="application-main " data-commit-hovercards-enabled="">
 <div class=""><main>
 <div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  p-responsive">
