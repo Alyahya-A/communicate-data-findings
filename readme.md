@@ -4,7 +4,7 @@
 
 ## Dataset
 
-The forgobike trip data are 3,254,324 rides that happend in 2017, 2018 and 2019 (until May). The dataset is contain 16 columns before I did cleaning. Some attributes duration_sec, start_time, end_time, start_station_id, start_station_name, and member_age. I download the data set from [HERE](https://www.lyft.com/bikes/bay-wheels/system-data).
+The forgobike trip data are 3,254,324 rides that happend in 2017, 2018 and 2019 (until May). The dataset is contain 16 columns before I did cleaning. Some attributes duration_sec, start_time, end_time, start_station_id, start_station_name, and member_age. I downloaded the data set from [HERE](https://www.lyft.com/bikes/bay-wheels/system-data).
 <br>
 I delete all user more than 60 years old because most users are between 18-58 year old. Also I creared new columns like age_category, duration_min, distance_km, start_time month, monthly, day, and hour. After I cleaned my data and craeted new columns the data became 3,177,270 records and 25 columns.
 
@@ -20,4 +20,11 @@ Also I found most ages are between 31 to 40 years old for subscriber users, and 
 
 ## Key Insights for Presentation
 
-> Select one or two main threads from your exploration to polish up for your presentation. Note any changes in design from your exploration step here.
+For the presentation, I focus on just the  user types, gender, and age. I start by showing the percentage of bike rides for all user types subcriber and customer, it's show the subcriber users are 84.2% and that mean the customer users are 15.8%.<br>
+Then I plot the number of bike rides (trips) for each day based on gender that mean it's plot the number of trips for evryday to show trips number for each gender on all days.<br>
+In the end I show the number of bike rides over time based on age category. I divided members age into 5 categories in cleaning section:
+- 11-20
+- 21-30
+- 31-40
+- 41-50
+- 51-60 <br>
