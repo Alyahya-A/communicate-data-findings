@@ -11,7 +11,7 @@ I delete all user more than 60 years old because most users are between 18-58 ye
 <br>
 
 <p align="center">
-  <img width="1000" height="650" src="https://www.rentjasper.com/wp-content/uploads/2019/06/Jasper-Ford-GoBike.jpg">
+  <img width="550" height="350" src="https://www.rentjasper.com/wp-content/uploads/2019/06/Jasper-Ford-GoBike.jpg">
 </p>
 
 <br>
