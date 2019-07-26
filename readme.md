@@ -12,8 +12,10 @@ I delete all user more than 60 years old because most users are between 18-58 ye
 
 In the exploration, I found that there are two types of user: 
 * Subscriber 
-* Customer
-dscsedcvf
+* Customer <br>
+I realised the subscriber users have the highset number of trips at 8.AM and 5.PM and that because the work hours (start and end work). Also the rides trips between 12.AM and 5.AM has the lowest number of rides and that it's hours sleep. And on the week day I found the weekday have  more trpis per day than weekend day. Unlike customer users.<br>
+The customer users the number of trips are start growing from 7.AM to 5.PM (highset) then it's will be decreased. Also they have the highset trips on weekend.<br>
+Also I found most ages are between 31 to 40 years old for subscriber users, and the customer users are between 21 to 30 years old.
 
 ## Key Insights for Presentation
 
